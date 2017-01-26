@@ -1,0 +1,30 @@
+{
+  "name": "webpack_build",
+  "version": "1.0.0",
+  "description": "A Front End Build using webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build/bundle.js && SET \"NODE_ENV=production\" && webpack",
+    "dev": "SET \"NODE_ENV=development\" &&  node dev-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silversurfer5150/WebpackBuild.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Will Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silversurfer5150/WebpackBuild/issues"
+  },
+  "homepage": "https://github.com/silversurfer5150/WebpackBuild#readme",
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
+
+// remove SET and escape quotes on Unix
